@@ -1,2 +1,2 @@
 config SHIELD_THE_UNI
-    def_bool $(shields_list_contains,my_board)
+    def_bool $(shields_list_contains,the_uni)
