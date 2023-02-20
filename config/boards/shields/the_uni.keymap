@@ -7,13 +7,16 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
-#define MAIN 0
-
 / {
     keymap {
         compatible = "zmk,keymap";
 
-        MAIN_layer {
+        default_layer {
+// ---------------------------------------------------
+// | S | T | P | H | * |     | * | F | P | L | T | D |
+// | S | K | W | R | * |     | * | R | B | G | S | Z |
+//         | A | A | O |     | E | U | U |
+
             bindings = <
                 &kp S    &kp T    &kp P    &kp H    &kp STAR      &kp STAR &lt F    &kp P    &kp L    &kp T    &kp D
                 &kp S    &kp K    &kp D    &kp R    &kp STAR      &kp STAR &lt R    &kp B    &kp G    &kp S    &kp Z
