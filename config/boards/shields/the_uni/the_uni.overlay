@@ -1,8 +1,5 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
-
 / {
     chosen {
         zmk,kscan = &kscan0;
