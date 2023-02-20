@@ -1,0 +1,6 @@
+if SHIELD_THE_UNI
+
+config ZMK_KEYBOARD_NAME
+    default "The Uni"
+
+endif
