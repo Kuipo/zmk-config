@@ -3,6 +3,7 @@ id: the_uni
 name: The Uni
 type: shield
 url: https://github.com/petercpark/The_Uni/
-requires: [pro_micro]
+requires:
+  - pro_micro
 features:
   - keys
