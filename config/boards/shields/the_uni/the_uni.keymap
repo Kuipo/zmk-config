@@ -12,9 +12,9 @@
 //         | # | A | O |     | E | U | # |
 
             bindings = <
-                &kp Q    &kp W    &kp F    &kp P    &kp STAR      &kp STAR &kp G    &kp J    &kp L    &kp U    &kp Y
-                &kp A    &kp R    &kp S    &kp T    &kp STAR      &kp STAR &kp D    &kp H    &kp N    &kp E    &kp I
-                                  &kp HASH &kp C    &kp V         &kp B    &kp K    &kp HASH
+                &kp Q    &kp W    &kp E    &kp R    &kp STAR      &kp STAR &kp T    &kp Y    &kp U    &kp I    &kp O
+                &kp A    &kp S    &kp D    &kp F    &kp STAR      &kp STAR &kp G    &kp H    &kp J    &kp K    &kp L
+                                  &kp HASH &kp C    &kp V         &kp B    &kp N    &kp HASH
             >;
         };
     };
