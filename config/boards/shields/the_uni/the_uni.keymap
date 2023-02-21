@@ -9,12 +9,12 @@
 // ---------------------------------------------------
 // | S | T | P | H | * |     | * | F | P | L | T | D |
 // | S | K | W | R | * |     | * | R | B | G | S | Z |
-//         | A | A | O |     | E | U | U |
+//         | # | A | O |     | E | U | # |
 
             bindings = <
-                &kp S    &kp T    &kp P    &kp H    &kp STAR      &kp STAR &kp F    &kp P    &kp L    &kp T    &kp D
-                &kp S    &kp K    &kp W    &kp R    &kp STAR      &kp STAR &kp R    &kp B    &kp G    &kp S    &kp Z
-                                  &kp HASH &kp A    &kp O         &kp E    &kp U    &kp HASH
+                &kp Q    &kp W    &kp F    &kp P    &kp STAR      &kp STAR &kp G    &kp J    &kp L    &kp U    &kp Y
+                &kp A    &kp R    &kp S    &kp T    &kp STAR      &kp STAR &kp D    &kp H    &kp N    &kp E    &kp I
+                                  &kp HASH &kp C    &kp V         &kp B    &kp K    &kp HASH
             >;
         };
     };
