@@ -7,35 +7,35 @@
 / {
     combos {
         compatible = "zmk,combos";
-        combo_btclr {
+        combo_bt_clr {
             timeout-ms = <100>;
             key-positions = <10 25 26 27>; // all three right thumb buttons + [
-            bindings = <&kp BTCLR>;
+            bindings = <&bt BT_CLR>;
         },
         combo_bt1 {
             timeout-ms = <100>;
             key-positions = <0 25 26 27>; // all three right thumb buttons + Q
-            bindings = <&kp BT1>;
+            bindings = <&bt BT_SEL 1>;
         },
         combo_bt2 {
             timeout-ms = <100>;
             key-positions = <1 25 26 27>; // all three right thumb buttons + W
-            bindings = <&kp BT2>;
+            bindings = <&bt BT_SEL 2>;
         },
         combo_bt3 {
             timeout-ms = <100>;
             key-positions = <2 25 26 27>; // all three right thumb buttons + E
-            bindings = <&kp BT3>;
+            bindings = <&bt BT_SEL 3>;
         },
         combo_bt4 {
             timeout-ms = <100>;
             key-positions = <3 25 26 27>; // all three right thumb buttons + R
-            bindings = <&kp BT4>;
+            bindings = <&bt BT_SEL 4>;
         },
         combo_bt5 {
             timeout-ms = <100>;
             key-positions = <4 25 26 27>; // all three right thumb buttons + T
-            bindings = <&kp BT5>;
+            bindings = <&bt BT_SEL 5>;
         };
     };
 };
