@@ -1,5 +1,44 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+
+#define DEFAULT 0
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+        combo_btclr {
+            timeout-ms = <100>;
+            key-positions = <10 25 26 27>; // all three right thumb buttons + [
+            bindings = <&kp BTCLR>;
+        },
+        combo_bt1 {
+            timeout-ms = <100>;
+            key-positions = <0 25 26 27>; // all three right thumb buttons + Q
+            bindings = <&kp BT1>;
+        },
+        combo_bt2 {
+            timeout-ms = <100>;
+            key-positions = <1 25 26 27>; // all three right thumb buttons + W
+            bindings = <&kp BT2>;
+        },
+        combo_bt3 {
+            timeout-ms = <100>;
+            key-positions = <2 25 26 27>; // all three right thumb buttons + E
+            bindings = <&kp BT3>;
+        },
+        combo_bt4 {
+            timeout-ms = <100>;
+            key-positions = <3 25 26 27>; // all three right thumb buttons + R
+            bindings = <&kp BT4>;
+        },
+        combo_bt5 {
+            timeout-ms = <100>;
+            key-positions = <4 25 26 27>; // all three right thumb buttons + T
+            bindings = <&kp BT5>;
+        };
+    };
+};
 
 / {
     keymap {
