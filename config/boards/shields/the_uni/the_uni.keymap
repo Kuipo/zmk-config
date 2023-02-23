@@ -3,39 +3,15 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define DEFAULT 0
+#define CONFIG 1
 
 / {
     combos {
         compatible = "zmk,combos";
-        combo_bt_clr {
+        combo_config_layer {
             timeout-ms = <100>;
-            key-positions = <10 25 26 27>; // all three right thumb buttons + [
-            bindings = <&bt BT_CLR>;
-        };
-        combo_bt1 {
-            timeout-ms = <100>;
-            key-positions = <0 25 26 27>; // all three right thumb buttons + Q
-            bindings = <&bt BT_SEL 1>;
-        };
-        combo_bt2 {
-            timeout-ms = <100>;
-            key-positions = <1 25 26 27>; // all three right thumb buttons + W
-            bindings = <&bt BT_SEL 2>;
-        };
-        combo_bt3 {
-            timeout-ms = <100>;
-            key-positions = <2 25 26 27>; // all three right thumb buttons + E
-            bindings = <&bt BT_SEL 3>;
-        };
-        combo_bt4 {
-            timeout-ms = <100>;
-            key-positions = <3 25 26 27>; // all three right thumb buttons + R
-            bindings = <&bt BT_SEL 4>;
-        };
-        combo_bt5 {
-            timeout-ms = <100>;
-            key-positions = <4 25 26 27>; // all three right thumb buttons + T
-            bindings = <&bt BT_SEL 5>;
+            key-positions = <25 26 27>; // all three right thumb buttons
+            bindings = <&mo CONFIG>;
         };
     };
 };
@@ -45,15 +21,17 @@
         compatible = "zmk,keymap";
 
         default_layer {
-// ---------------------------------------------------
-// | S | T | P | H | * |     | * | F | P | L | T | D |
-// | S | K | W | R | * |     | * | R | B | G | S | Z |
-//         | # | A | O |     | E | U | # |
-
             bindings = <
-                &kp Q    &kp W    &kp E    &kp R    &kp T       &kp Y    &kp U    &kp I    &kp O    &kp P    &kp LBKT
-                &kp A    &kp S    &kp D    &kp F    &kp G       &kp H    &kp J    &kp K    &kp L    &kp SEMI &kp APOS
-                                  &kp X    &kp C    &kp V       &kp N    &kp M    &kp SPACE
+                &kp Q    &kp W    &kp E    &kp R    &kp T    |    &kp Y    &kp U    &kp I    &kp O    &kp P    &kp LBKT
+                &kp A    &kp S    &kp D    &kp F    &kp G    |    &kp H    &kp J    &kp K    &kp L    &kp SEMI &kp APOS
+                                  &kp X    &kp C    &kp V    |    &kp N    &kp M    &kp SPACE
+            >;
+        };
+        config_layer {
+            bindings = <
+                &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_SEL 5  |   &trans    &trans    &trans    &trans    &trans    &bt BT_CLR
+                &trans       &trans       &trans       &trans       &trans        |   &trans    &trans    &trans    &trans    &trans    &trans
+                                          &trans       &trans       &trans        |   &trans    &trans    &trans
             >;
         };
     };
