@@ -16,7 +16,7 @@
         };
         combo_toggle_hid_steno_layer {
             timeout-ms = <100>;
-            key-positions = <22 23 24 25 26 27>; // all six thumb buttons exits steno
+            key-positions = <22 23 24>; // all three left thumb buttons toggles steno
             bindings = <&tog STENO>;
         };
     };
